@@ -19,6 +19,11 @@ const Todo = sequelize.define("Todo", {
     allowNull: false,
     defaultValue: false,
   },
+  IsDeleted: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false,
+  },
 });
 
 module.exports = Todo;

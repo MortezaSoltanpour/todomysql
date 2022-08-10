@@ -39,7 +39,6 @@ app.use(page404Controller.get404);
 sequelize
   .sync()
   .then((result) => {
-    console.log(result);
     app.listen(3000, () => console.log(`Server is running.`));
   })
   .catch((err) => {
